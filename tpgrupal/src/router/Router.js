@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/mentenimiento",
+    path: "/mantenimiento",
     element: <Maintenance />,
   },
 ]);
