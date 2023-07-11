@@ -140,6 +140,10 @@ const Products = () => {
         onChange={(page) => setActualPage(page)}
         disabled={disablePages}
       />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </>
   );
 };
