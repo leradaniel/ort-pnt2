@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@popperjs/core";
 import "bootstrap";
-import router from "./Router";
+import router from "./router/Router";
 
 ReactDOM.render(
   <RouterProvider router={router} />,

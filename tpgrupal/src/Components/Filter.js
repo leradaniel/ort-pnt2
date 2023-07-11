@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FilterItem } from "../Components/FilterItem";
 import TagsJson from "../data/tags.json";
-import { FiltersContext } from "./FiltersContext";
+import { FiltersContext } from "../context/FiltersContext";
 
 export const Filter = ({ setActualPage }) => {
   const filterNames = ["Colores", "Tipo", "Temática"];

@@ -2,7 +2,7 @@ import { ProductItem } from "./ProductItem";
 import ProductsJson from "../data/products.json";
 import { Filter } from "./Filter";
 import React, { useContext, useState } from "react";
-import { FiltersContext } from "../Components/FiltersContext";
+import { FiltersContext } from "../context/FiltersContext";
 import { Paginacion } from "./Paginacion";
 
 const Products = () => {

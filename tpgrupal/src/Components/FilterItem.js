@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { FiltersContext } from "./FiltersContext";
+import { FiltersContext } from "../context/FiltersContext";
 
 export const FilterItem = ({ name, id, setActualPage }) => {
   const { filters, setFilters } = useContext(FiltersContext);
