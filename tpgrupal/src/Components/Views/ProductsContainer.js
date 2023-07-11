@@ -1,22 +1,13 @@
-import React, { useState } from "react";
-import { FiltersContext } from "../FiltersContext";
-import TagsJson from "../../data/tags.json";
+import React from "react";
+import FilterProvider from "../FiltersContext";
 import Products from "../Products";
 
 const ProductsContainer = () => {
-  const initFilters = () => {
-    let tagsActive = TagsJson.map(() => {
-      return false;
-    });
-    return tagsActive;
-  };
-  const [filters, setFilters] = useState(initFilters);
-
   return (
     <>
-      <FiltersContext.Provider value={{ filters, setFilters }}>
+      <FilterProvider>
         <Products />
-      </FiltersContext.Provider>
+      </FilterProvider>
     </>
   );
 };

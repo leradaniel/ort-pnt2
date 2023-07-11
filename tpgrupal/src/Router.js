@@ -11,11 +11,11 @@ const router = createBrowserRouter([
     element: <HolyPlaceApp />,
     children: [
       {
-        path: "/prod",
+        path: "/productos",
         element: <ProductsContainer />,
       },
       {
-        path: "/ab",
+        path: "/informacion",
         element: <AboutMe />,
       },
       {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/mant",
+    path: "/mentenimiento",
     element: <Maintenance />,
   },
 ]);

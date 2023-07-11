@@ -3,9 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Productos</a>
-      <a href="#">Información</a>
+      <a href="/">Home</a>
+      <a href="/informacion">Informacion</a>
+      <a href="/productos">Productos</a>
     </nav>
   );
 };
