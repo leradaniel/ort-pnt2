@@ -7,7 +7,7 @@ import { Paginacion } from "./Paginacion";
 
 const Products = () => {
   const { filters } = useContext(FiltersContext);
-  let disablePages = false
+  let disablePages = false;
   const [actualPage, setActualPage] = useState(1);
 
   const [totalProductsPerPage, setTotalProductsPerPage] = useState(9);
@@ -40,11 +40,11 @@ const Products = () => {
     return false;
   };
 
-    let products = getProducts(ProductsJson);
+  let products = getProducts(ProductsJson);
 
   const getTotalPages = () => {
     let pagesNumber = Math.ceil(products.length / totalProductsPerPage);
-    pagesNumber > 1 ? disablePages=false : disablePages=true;
+    pagesNumber > 1 ? (disablePages = false) : (disablePages = true);
     return pagesNumber;
   };
 

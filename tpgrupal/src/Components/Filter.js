@@ -6,12 +6,12 @@ import { FiltersContext } from "./FiltersContext";
 export const Filter = ({ setActualPage }) => {
   const filterNames = ["Colores", "Tipo", "Temática"];
 
-    let asignedFilters = TagsJson.map((tag) => {
+  let asignedFilters = TagsJson.map((tag) => {
     if (tag.position === 0) tag.position = tag.id;
     return tag;
   });
 
-    let orderedFilters = asignedFilters.sort((a, b) =>
+  let orderedFilters = asignedFilters.sort((a, b) =>
     a.position > b.position ? 1 : -1
   );
 

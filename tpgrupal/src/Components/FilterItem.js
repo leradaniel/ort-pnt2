@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { FiltersContext } from "./FiltersContext";
 
-export const FilterItem = ({ name, id, setActualPage}) => {
-  const {filters, setFilters} = useContext(FiltersContext);
+export const FilterItem = ({ name, id, setActualPage }) => {
+  const { filters, setFilters } = useContext(FiltersContext);
 
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(false);
 
   let filterRef = filters[id - 1];
-  
+
   function handleClick(e) {
     e.stopPropagation();
     let newFilters = [...filters];
@@ -16,19 +16,21 @@ export const FilterItem = ({ name, id, setActualPage}) => {
     setActualPage(1);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     setChecked(filterRef);
   }, [filterRef]);
 
   return (
     <>
-          <li>
-      <button
-        className={"dropdown-item"+ (checked === true ? " active" : "")} type="button" onClick={handleClick}
-      >
-        {name}
-      </button>
-    </li>    
+      <li>
+        <button
+          className={"dropdown-item" + (checked === true ? " active" : "")}
+          type="button"
+          onClick={handleClick}
+        >
+          {name}
+        </button>
+      </li>
     </>
   );
 };
